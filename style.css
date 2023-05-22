@@ -1,0 +1,414 @@
+*{
+    margin: 0;padding: 0;
+    color: white;
+   
+    box-sizing: border-box;
+    /* overflow-x: hidden;
+    overflow-y: auto; */
+}
+
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 27%;
+    
+}
+.logo img{
+    border-radius: 50px;
+}
+.box{
+    display: flex;
+    justify-content:space-between;
+    
+
+}
+.logo{
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.logo img{
+    display: flex;
+    justify-content: center;
+}
+
+.gallery{
+    
+    
+    
+    display: grid;
+    gap: 40px;
+    grid-template-columns:auto auto;
+    grid-auto-rows: 200px;
+
+
+}
+.empty1{
+    flex-basis: 5%;
+}
+/* .gallery .players{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    font-weight: 1000;
+    text-shadow: 0.5rem;
+}
+.gallery .players p.head{
+    border: 5px rgb(160, 116, 4) double;
+    text-shadow: 2rem;
+} */
+.picture{
+    position: relative;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-size:cover; */
+    background-position: center;
+    border: 5px rgb(160, 116, 4) double;
+    border-radius: 20px;
+    background: black;
+    transition: all .7s ease-in-out;
+}
+.picture img.a{
+    width: 911.51px;
+}
+.picture:hover img{
+    opacity: .4;
+}
+
+
+
+
+.col-2{
+    grid-column: span 2;
+}
+.row-2{
+    grid-row: span 2;
+}
+.row-3{
+    grid-row: span 3;
+}
+.gallery .picture img{
+    transition:all ease-in-out 0.5s;
+}
+.gallery .picture:hover img{
+    transform: scale(1.1);
+}
+.gallery .picture{
+    width: auto;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: cover;
+    
+}
+.gallery .picture img{
+    object-fit: cover;
+    /* object-position:0%; */
+    
+}
+.overlay1{
+    width: auto;
+    position: absolute;
+    top: 48vh;
+    left: 16vw;
+    right: 0;
+    bottom: 0;
+    
+    /* color: brown; */
+    opacity: 0;
+    cursor: pointer;
+    transition: all .7s ease-in-out;
+    font-size: 10rem;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+}
+.cg .overlay2{
+    left: 10vw;
+    
+}
+
+.overlay2{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 48vh;
+    left: 8vw;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.maxi .overlay2,.yuzi .overlay2{
+   
+    position: absolute;
+    top: 48vh;
+    left: 4vw;
+   
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.overlay2 p.text{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+}
+.maxi .overlay2 p.text,.yuzi .overlay2 p.text{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+}
+.gallery .picture:hover .overlay1,.gallery .picture:hover .overlay2{
+    opacity: 1;
+}
+.overlay2 .extra{
+    
+    position: absolute;
+    top: 134px;
+    left: -11px;
+    opacity: 0;
+    transition: all 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+.picture:hover .extra{
+    opacity: 1;
+    transform: translate(80%);
+}
+.faf .extra,.siraj .extra{
+    top: 134px;
+    left: -51px;
+}
+.yuzi .extra{
+    top: 122px;
+    left: 27px;
+}
+.abd .extra{
+    left: -5px;
+}
+.overlay3{
+    position: absolute;
+    top: 180px;
+    left: 48px;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+.cg .overlay2 p.text{
+    letter-spacing: .1rem;
+}
+
+.picture:hover .overlay3{
+    opacity: 1;
+}
+.picture:hover .extra{
+    transform: translateY(-150%);
+}
+
+
+
+.gallery2{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+
+
+}
+
+.gallery2 .picture2{
+    width: 20vw;
+    height: 46.88vh;
+    
+    overflow: hidden;
+    border: 5px rgb(160, 116, 4) double;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+
+
+}
+.abd2 img,.abd3 img{
+    height: 50vh;
+}
+.gallery2 .picture2 img{
+    object-fit: cover;
+    width: 20vw;
+    
+    
+}
+.overlay_2{
+    background-image: linear-gradient(111deg,rgb(97 0 0 / 33%),black);
+    position: absolute;
+    top: 60vh;
+    left: 1vw;
+    
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    text-align: center;
+    
+}
+p.text_2{
+    position: absolute;
+    top: 7vh;
+    left: 3vw;
+    font-size: 1.5vw;
+    font-weight: 500;
+    letter-spacing: .2rem;
+
+}
+.picture2:hover .overlay_2{
+    opacity: 1;
+    transform: translateY(-30vh);
+}
+.vk2 .overlay_2 p.text_2{
+    left: 5vw;
+}
+.abd2 .overlay_2 p{
+    left:6vw ;
+}
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:1000px) {
+    .box .empty1{
+        max-width: 0;
+        
+    }
+    .box .gallery{
+        width: 80vw;
+    }
+}
+@media  screen and (min-width:1000px) {
+    .box .empty1{
+        flex-basis: 44%;
+        
+    }
+}
+@media  screen and (max-width:600px) {
+   .gallery{
+    display: flex;
+    flex-direction: column;
+
+
+   }
+   .picture:hover .overlay1{
+        left: 13vw;
+   }
+   .picture:hover .overlay2{
+    left: 25vw;
+}
+   .picture p.extra{
+    font-size: 1.5rem;
+   }
+   .gallery .picture{
+    height: 80vh;
+   }
+   .team .overlay1 p{
+    font-size: 7rem;
+   }
+   .gallery2 .picture2 .overlay_2{
+    width: 100%;
+   }
+}
+.gallery3{
+    display: flex;
+    justify-content: space-evenly;
+    width: 98vw;
+    height: 60vh;
+    margin: 20px 0;
+    
+}
+.gallery3 .pics{
+    height: 60vh;
+    
+    gap: 10px;
+    position: absolute;
+    
+    
+    border: 5px double goldenrod;
+    transition: all 1.5s ease-in-out;
+    cursor: pointer;
+    overflow:hidden;
+}
+
+
+
+    
+.pics img{
+    width: 50vw;
+    
+    height: 450px;
+    overflow: hidden;
+    object-fit: cover;
+
+    object-position: center;
+
+}
+.overlay_3{
+    background-image: linear-gradient(111deg,rgb(97 0 0 / 33%),black);
+    position: absolute;
+    top: 67vh;
+    left: 3vw;
+    
+    width: 90%;
+    height: 40%;
+    border-radius: 10px;
+    opacity: 0;
+    display: flex;
+    text-align: center;
+    
+}
+.makes .overlay_3 p.text_4{
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: .25rem;
+    left: 14vw;
+    
+}
+.overlay_3 p.text_3{
+    font-size: 7vw;
+    letter-spacing: 3rem;
+    position: absolute;
+    top: 0vh;
+    left: 8vw;
+
+
+}
+.overlay_3 p.text_4{
+    font-size: 3vw;
+    letter-spacing: .5rem;
+    position: absolute;
+    top: 7vh;
+    left: 5vw;
+
+
+}
+.pics:hover .overlay_3{
+    opacity: 1;
+    transform: translateY(-30vh);
+}
